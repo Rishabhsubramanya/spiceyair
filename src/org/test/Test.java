@@ -18,12 +18,14 @@ public class Test {
 		//go to the url
 		driver.get("https://www.facebook.com/login/");
 		 
-		//maximize
-		driver.manage().window().maximize();
-		
+	
 		//to find the WebElement
 		WebElement txtUserName = driver.findElement(By.xpath("//input[@type='test']"));
 		txtUserName.sendKeys("test");
+		
+		//maximize
+	    driver.manage().window().maximize();
+				
 		
 		//To find the WebElement
 		WebElement txtPassword = driver.findElement(By.xpath("//input@placeholder='password"));
